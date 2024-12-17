@@ -1,9 +1,9 @@
+<div id="toc" />
 ## Table of content
-
 1. [Chapter 1](#chapter-1)
 
 <div id="chapter-1" />
-## Chapter 1
+## Chapter 1 ([toc](#toc))
 
 ### Lesson 1
 
