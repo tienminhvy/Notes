@@ -1,5 +1,7 @@
 <div id="toc" />
+
 ## Table of content
+
 1. [Chapter 1](#chapter-1)
     - [Lesson 1: basic operation](#c1-lesson1)
     - [Lesson 2: the delete operator](#c1-lesson2)
@@ -13,9 +15,11 @@
     - [Lesson 7](#c1-lesson7)
 
 <div id="chapter-1" />
+
 ## Chapter 1 ([toc](#toc))
 
 <div id="c1-lesson1" />
+
 ### Lesson 1: basic operation
 
 1. Moving cursor with `up`, `down`, `left`, `right`
@@ -26,13 +30,13 @@
 4. Deleting any character with `ESC` `x`
 
 <div id="c1-lesson2" />
+
 ### Lesson 2: the delete operator
 
 1. Deleting from the cursor to the next word type: `dw`
 2. Deleting from the cursor to the end of the word type: `de`
 3. Deleting from the cursor to the end of a line type: `d$`
 4. Deleting a whole line: `dd`
-
 5. Repeating a motion: `operator [number] motion`. Where
     - operator: For what to do. Ex: `d` for delete
     - number: Optional count to repeat a motion
@@ -44,6 +48,7 @@
     - `CTRL-R` for undo the undos (redo)
 
 <div id="c1-lesson3" />
+
 ### Lesson 3: the change operator
 
 1. Putting the previous deleted text to the cursor with `p`.
@@ -53,15 +58,20 @@
 5. Changing can also work with the format `operator [number] motion`
 
 <div id="c1-lesson4-1" />
+
 ### Lesson 4.1: cursor location and file status
+
 1. Press `CTRL-G` to show the location of the file editing.
 2. Press `G` (capital g) to go to the bottom of the file.
 3. Type `gg` to go to the top of the file.
 4. Type number of the line and `G` to go to that line. For ex: `5G`
 
 <div id="c1-lesson4-2" />
+
 ### Lesson 4.2: The search command
+
 Type / followed by the pharse in order to search for it
+
 1. Press `enter` to search.
 2. Type `n` in order to search again forward, `N` for backward direction.
 3. When wrapscan is turned on, if the search reaches the end of the file it will continue at the start.
@@ -69,6 +79,7 @@ Type / followed by the pharse in order to search for it
 5. Matching parentheses search by move the cursor to (, ), {, }, [, ] then type %.
 
 <div id="c1-lesson4-3" />
+
 ### Lesson 4.3: The substitute command
 
 1. Type `:s/old/new/g` to substitute 'new' for 'old'.
@@ -103,6 +114,7 @@ Type / followed by the pharse in order to search for it
     -   To ask for confirmation each time add 'c' `:%s/old/new/gc`
 
 <div id="c1-lesson5" />
+
 ### Lesson 5:
 
 1.  `:!command` executes an external command.
@@ -115,23 +127,25 @@ Type / followed by the pharse in order to search for it
 5.  `:r !ls` reads the output of the ls command and puts it below the cursor position.
 
 <div id="c1-lesson6" />
+
 ### Lesson 6:
 
-1.  - Type `o` to open a line BELOW the cursor and start Insert mode.
-    - Type `O` to open a line ABOVE the cursor.
-2.  - Type `a` to insert text AFTER the cursor.
-    - Type `A` to insert text after the end of the line.
-3. The `e` command moves to the end of a word.
-4. The `y` operator yanks (copies) text, `p` puts (pastes) it.
-5. Typing a capital `R` enters Replace mode until `ESC` is pressed.
-6. Typing `:set xxx` sets the option "xxx". Some options are:
-   'ic' 'ignorecase' ignore upper/lower case when searching
-   'is' 'incsearch' show partial matches for a search phrase
-   'hls' 'hlsearch' highlight all matching phrases
-   You can either use the long or the short option name.
-7. Prepend "no" to switch an option off: `:set noic`
+1.  -   Type `o` to open a line BELOW the cursor and start Insert mode.
+    -   Type `O` to open a line ABOVE the cursor.
+2.  -   Type `a` to insert text AFTER the cursor.
+    -   Type `A` to insert text after the end of the line.
+3.  The `e` command moves to the end of a word.
+4.  The `y` operator yanks (copies) text, `p` puts (pastes) it.
+5.  Typing a capital `R` enters Replace mode until `ESC` is pressed.
+6.  Typing `:set xxx` sets the option "xxx". Some options are:
+    'ic' 'ignorecase' ignore upper/lower case when searching
+    'is' 'incsearch' show partial matches for a search phrase
+    'hls' 'hlsearch' highlight all matching phrases
+    You can either use the long or the short option name.
+7.  Prepend "no" to switch an option off: `:set noic`
 
 <div id="c1-lesson7" />
+
 ### Lesson 7:
 
 1. Type `:help` or press `F1` or `HELP` to open a help window.
