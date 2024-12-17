@@ -100,3 +100,14 @@ Type / followed by the pharse in order to search for it
     -   To substitute phrases between two line #'s type `:#,#s/old/new/g`
     -   To substitute all occurrences in the file type `:%s/old/new/g`
     -   To ask for confirmation each time add 'c' `:%s/old/new/gc`
+
+### Lesson 5:
+
+1.  :!command executes an external command.
+    - Some useful examples are:
+        - :!ls - shows a directory listing.
+        - :!rm FILENAME - removes file FILENAME.
+2.  :w FILENAME writes the current Vim file to disk with name FILENAME.
+3.  v motion :w FILENAME saves the Visually selected lines in file FILENAME.
+4.  :r FILENAME retrieves disk file FILENAME and puts it below the cursor position.
+5.  :r !dir reads the output of the dir command and puts it below the cursor position.
