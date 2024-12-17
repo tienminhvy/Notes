@@ -1,15 +1,15 @@
 <div id="toc" />
 ## Table of content
 1. [Chapter 1](#chapter-1)
-    1.1 [Lesson 1: basic operation](#c1-lesson1)
-    1.2 [Lesson 2: the delete operator](#c1-lesson2)
-    1.3 [Lesson 3: the change operator](#c1-lesson3)
-    1.4 Lesson 4
-    1.4.1 [Lesson 4-1: cursor location and file status](#c1-lesson4-1)
-    1.4.2 [Lesson 4-2: the search command](#c1-lesson4-2)
-    1.4.3 [Lesson 4-3: cursor location and file status](#c1-lesson4-3)
-    1.5 [Lesson 5](#c1-lesson5)
-    1.6 [Lesson 6](#c1-lesson6)
+    - [Lesson 1: basic operation](#c1-lesson1)
+    - [Lesson 2: the delete operator](#c1-lesson2)
+    - [Lesson 3: the change operator](#c1-lesson3)
+    - Lesson 4
+        - [Lesson 4-1: cursor location and file status](#c1-lesson4-1)
+        - [Lesson 4-2: the search command](#c1-lesson4-2)
+        - [Lesson 4-3: cursor location and file status](#c1-lesson4-3)
+    - [Lesson 5](#c1-lesson5)
+    - [Lesson 6](#c1-lesson6)
 
 <div id="chapter-1" />
 ## Chapter 1 ([toc](#toc))
