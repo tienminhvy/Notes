@@ -89,9 +89,10 @@ Run the hello-world container from the same name image.
 docker run -it --name hello-world hello-world
 ```
 
-Note: 
-- `-d` for detached mode
-- `-it` for interactive mode
+Note:
+
+-   `-d` for detached mode
+-   `-it` for interactive mode
 
 <div id="manage" />
 
@@ -148,3 +149,36 @@ Common Dockerfile command list
 | EXPOSE | Informs the network ports that the container will listen on                                             | EXPOSE 9999                      |
 
 ## Docker volume
+
+### Using Volume
+
+Store in a part of the host filesystem (`/var/lib/docker/volumes/` on Linux)
+Created and managed by Docker
+
+Use cases:
+
+-   Sharing data among multiple running containers
+-   Storing a container’s data on remote hosts or cloud providers
+-   Need to backup, restore, or migrate data from one Docker host to another
+-   When the Docker host is not guaranteed to have a given directory or file structure
+
+```sh
+## create and manage a volume
+docker volume create myvol         ## created at /var/lib/docker/volumes/myvol
+docker volume ls
+docker volume rm myvol
+```
+
+Run a Docker container with a volume using `-v` or `--volume`
+
+```bash
+docker run -v myvol:/app hello-world
+```
+
+Or
+
+```bash
+docker run --mount source=myvol,target=/app hello-world
+```
+
+### Using BIND MOUNT
