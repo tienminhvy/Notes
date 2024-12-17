@@ -10,6 +10,7 @@
         - [Lesson 4-3: cursor location and file status](#c1-lesson4-3)
     - [Lesson 5](#c1-lesson5)
     - [Lesson 6](#c1-lesson6)
+    - [Lesson 7](#c1-lesson7)
 
 <div id="chapter-1" />
 ## Chapter 1 ([toc](#toc))
@@ -101,13 +102,42 @@ Type / followed by the pharse in order to search for it
     -   To substitute all occurrences in the file type `:%s/old/new/g`
     -   To ask for confirmation each time add 'c' `:%s/old/new/gc`
 
+<div id="c1-lesson5" />
 ### Lesson 5:
 
-1.  :!command executes an external command.
-    - Some useful examples are:
-        - :!ls - shows a directory listing.
-        - :!rm FILENAME - removes file FILENAME.
-2.  :w FILENAME writes the current Vim file to disk with name FILENAME.
-3.  v motion :w FILENAME saves the Visually selected lines in file FILENAME.
-4.  :r FILENAME retrieves disk file FILENAME and puts it below the cursor position.
-5.  :r !dir reads the output of the dir command and puts it below the cursor position.
+1.  `:!command` executes an external command.
+    -   Some useful examples are:
+        -   `:!ls` - shows a directory listing.
+        -   `:!rm` FILENAME - removes file FILENAME.
+2.  `:w FILENAME` writes the current Vim file to disk with name FILENAME.
+3.  `v motion :w FILENAME` saves the Visually selected lines in file FILENAME.
+4.  `:r FILENAME` retrieves disk file FILENAME and puts it below the cursor position.
+5.  `:r !ls` reads the output of the ls command and puts it below the cursor position.
+
+<div id="c1-lesson6" />
+### Lesson 6:
+
+1.  - Type `o` to open a line BELOW the cursor and start Insert mode.
+    - Type `O` to open a line ABOVE the cursor.
+2.  - Type `a` to insert text AFTER the cursor.
+    - Type `A` to insert text after the end of the line.
+3. The `e` command moves to the end of a word.
+4. The `y` operator yanks (copies) text, `p` puts (pastes) it.
+5. Typing a capital `R` enters Replace mode until `ESC` is pressed.
+6. Typing `:set xxx` sets the option "xxx". Some options are:
+   'ic' 'ignorecase' ignore upper/lower case when searching
+   'is' 'incsearch' show partial matches for a search phrase
+   'hls' 'hlsearch' highlight all matching phrases
+   You can either use the long or the short option name.
+7. Prepend "no" to switch an option off: `:set noic`
+
+<div id="c1-lesson7" />
+### Lesson 7:
+
+1. Type `:help` or press `F1` or `HELP` to open a help window.
+2. Type `:help cmd` to find help on cmd .
+3. Type `CTRL-W` `CTRL-W` to jump to another window.
+4. Type `:q` to close the help window.
+5. Create a vimrc startup script to keep your preferred settings.
+6. When typing a : command, press `CTRL-D` to see possible completions.
+   Press `TAB` to use one completion.
