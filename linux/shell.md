@@ -25,4 +25,10 @@
     - operator: For what to do. Ex: `d` for delete
     - number: Optional count to repeat a motion
     - motion: moves over the text to operate on. Ex: `w` (word), `e` (end of word), `$` (end of line), etc
-6. Moving to the start on the line: `0` 
+6. Moving to the start on the line: `0`
+7. Undoing actions:
+    - `u` for previous actions.
+    - capital u `U` for all the changes on a line.
+    - `CTRL-R` for undo the undos (redo)
+
+### Lesson 3
