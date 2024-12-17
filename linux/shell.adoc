@@ -1,14 +1,5 @@
-= Hello, AsciiDoc!
+This is markdown!
 
-This is an interactive editor.
-Use it to try https://asciidoc.org[AsciiDoc].
+# Chapter 1
 
-== Section Title
-
-* A list item
-* Another list item
-
-[,ruby]
-----
-puts 'Hello, World!'
-----
+Lorem
