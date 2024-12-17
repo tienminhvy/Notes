@@ -32,3 +32,6 @@
     - `CTRL-R` for undo the undos (redo)
 
 ### Lesson 3
+
+1. Putting the previous deleted text to the cursor with `p`.
+2. Replace the character at the cursor with x with `rx` (x is the typed character).
